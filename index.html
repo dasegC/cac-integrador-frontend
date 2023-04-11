@@ -29,7 +29,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="#">
-                <img src="img/codoacodo.png" style="width: 75px;" alt="logo codo a codo"> Conf Bs As <!-- ESTILIZAR TAMAÑO DE IMG -->
+                <img src="img/codoacodo.png" class="logo" alt="logo codo a codo"> Conf Bs As 
               </a>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -56,24 +56,31 @@
           </nav>
     </header>
     <main>
-        <section class="container-fluid col-sm-12 p-0">
-            <img style="width: 100%;" src="img/ba1.jpg" alt="Edificio Aguas Argentinas"> <!-- ESTILIZAR TAMAÑO DE IMG -->
+        <section class="container-fluid col-12 p-0">
+            <img class="oscurecer" src="img/ba1.jpg" alt="Edificio Aguas Argentinas">
 
-            <div>
-              <h1>Conf Bs As</h1>
-              <p>
-                  Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti.
-              </p>
-              <button type="button" class="btn btn-light btn-border">Quiero ser orador
-              </button>
-              <button type="button" class="btn btn-green">Quiero ser orador
-              </button>
-            </div>
+            <article>
+              <div class="detalle">
+                <h1 class="color-texto">Conf Bs As</h1>
+                <p class="color-texto">
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                </p>
+                <button type="button" class="btn btn-light btn-border">Quiero ser orador
+                </button>
+                <button type="button" class="btn btn-green">Comprar tickets
+                </button>
+              </div>
+            </article>
 
         </section>
 
         <section class="container">
-            <div class="card-group">
+
+          <div class="oradores d-flex flex-column align-items-center">
+            <P class="mb-0 texto-gris">CONOCE A LOS</P>
+            <h2>ORADORES</h2>
+          </div>
+            <div class="card-group mb-3">
                 <div class="card">
                   <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs" title="Steve Jobs">
                   <div class="card-body">
@@ -83,7 +90,7 @@
                       </p>
                       
                     <h5 class="card-title">Steve Jobs</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
+                    <p class="card-text texto-gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
                     
                   </div>
                 </div>
@@ -94,8 +101,8 @@
                         <span class="badge rounded-pill text-bg-warning">JavaScript</span>
                         <span class="badge rounded-pill text-bg-primary">React</span>
                       </p>
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text texto-gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
                     
                   </div>
                 </div>
@@ -106,8 +113,8 @@
                         <span class="badge rounded-pill text-bg-secondary">Negocios</span>
                         <span class="badge rounded-pill text-bg-danger  x">Startups</span>
                       </p>
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text texto-gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, atque accusamus dignissimos est nihil nemo deleniti ipsum natus quisquam similique necessitatibus eos reiciendis eum labore hic, molestiae earum itaque?</p>
                     
                   </div>
                 </div>
@@ -116,31 +123,64 @@
 
         <section class="container-fluid">
             <div class="row">
-                <div class="caja">
+                <div class="col-md-6 p-0">
                     <!-- ESTILIZAR IMG -->
-                    <img style="width: 100%;" src="img/honolulu.jpg" alt="Honolulu">
+                    <img src="img/honolulu.jpg" alt="Honolulu">
                 </div>
                 
-                <div class="caja bg-dark m-0">
-                    <h2>Bs As - Octubre</h2>
-                    <p>
+                <div class="bg-dark col-md-6">
+                    <h2 class="color-texto mt-3">Bs As - Octubre</h2>
+                    <p class="color-texto">
                         Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honululu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km² de superficie)
                     </p>
-                    <button type="button" class="btn btn-light btn-border">Conocé más
+                    <button type="button" class="btn btn-light btn-border btn-transparente color-texto">Conocé más
                     </button>
                 </div>
             </div>
         </section>
+
+        <section class="d-flex flex-column align-items-center">
+          <div class="orador">
+            <div class="text-center">
+              <P class="texto-gris mt-3">CONVIERTETE EN UN</P>
+              <h2>ORADOR</h2>
+              <P>
+                Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!
+              </P>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="comentarios">
+                  <textarea class="form-control" name="text-area" id="text-area" cols="30" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                  <p class="nota">Recuerda incluir un título para tu charla</p>
+                </div>
+              </div>
+              <div class="col-auto mb-3">
+                <button type="submit" class="btn btn-submit col-12">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+
     </main>
-    <footer>
+    <footer class="d-flex align-items-center justify-content-center">
         <!-- place footer here -->
-        <a href="">Preguntas <br>frecuentes</a>
-        <a href="">Contáctanos</a>
-        <a href="">Prensa</a>
-        <a href="">Conferencias</a>
-        <a href="">Términos y <br> condiciones</a>
-        <a href="">Privacidad</a>
-        <a href="">Estudiantes</a>
+        <div class="links-footer d-flex flex-wrap text-center">
+          <a href="">Preguntas <br> frecuentes</a>
+          <a href="">Contáctanos</a>
+          <a href="">Prensa</a>
+          <a href="">Conferencias</a>
+          <a href="">Términos y <br> condiciones</a>
+          <a href="">Privacidad</a>
+          <a href="">Estudiantes</a>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
